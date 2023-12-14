@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+*.log
+db.sqlite3
+media/
+
+# Secret key
+*.secret
+
+# Development
+*.sqlite3
+*.db
+*.sqlite
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore virtual environment
+venv/
+venv3/
+env/
+__env__/
+env-bak/
+
+# Ignore pipenv
+Pipfile
+Pipfile.lock
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore pytest cache
+__pycache__/
+.pytest_cache/
+
+# Ignore coverage reports
+htmlcov/
+
+# Ignore temporary files
+*.swp
+*~
+
+# Ignore node_modules for frontend projects
+node_modules/
+
+# Ignore .env files containing sensitive information
+.env
+.env.local
+.env.*.local
+.env.test
+.env.prod
+
+# Ignore Docker Compose files
+docker-compose.yml
+docker-compose.override.yml
