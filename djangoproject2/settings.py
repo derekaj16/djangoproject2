@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = (
-       'http://34.217.46.210',
+       'http://54.190.158.141',
        'http://localhost'
 )
 
