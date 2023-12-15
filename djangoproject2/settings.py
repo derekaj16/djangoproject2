@@ -28,7 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['0.0.0.0']
 
 CORS_ORIGIN_WHITELIST = (
-       'http://localhost'
+       'http://localhost:3000',
+       'http://localhost:80',
+       'http://localhost:8000'
 )
 
 
