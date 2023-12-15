@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="App">
+  <nav class="navbar bg-white text-center">
+    <div class="container-fluid p-3 justify-content-center">
+      <span class="mb-0 h1 text-center">Aviation Central</span>
+    </div>
+  </nav>
+  <div class='container mt-5'>
+    <div class="container text-center">
+      <div class="row row-cols-3 justify-content-center">
+          {% for plane in planes %}
+          <div class="col mb-5">
+            <div class='m-3 p-3 bg-light rounded shadow-lg justify-content-left'>
+              <img class='rounded img-fluid mb-2' src={{ plane.image }} />
+              <div class='d-flex justify-content-start flex-column'>
+              <h4 class='text-start'>{{plane.name}}</h4>
+              <p class='text-start mb-1'><b>Price:</b> ${{plane.price}}</p>
+              <p class='text-start'><b>Description:</b> {{plane.notes}}</p>
+              <button class='btn btn-primary justify-content-start'>Purchase</button>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
